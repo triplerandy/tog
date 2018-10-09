@@ -1,0 +1,36 @@
+<div class="action-background">
+  <div class="action-content">
+    <button ion-button icon-only>
+      <ion-icon name="refresh"></ion-icon>
+    </button>
+    <span>
+      {{strings.i_want_to}}{{action.name}}{{action.location_query}}{{action.time_query}}{{action.people_query}}
+    </span>
+  </div>
+</div>
+
+<div class="action-selector">
+  <div>
+    <ion-segment [(ngModel)]="mode">
+      <ion-segment-button value="what">
+        {{strings.what}}
+      </ion-segment-button>
+      <ion-segment-button value="where">
+        {{strings.where}}
+      </ion-segment-button>
+      <ion-segment-button value="when">
+        {{strings.when}}
+      </ion-segment-button>
+      <ion-segment-button value="who">
+        {{strings.who}}
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="mode" class="action-container">
+    <what *ngSwitchCase="'what'"></what>
+    <when *ngSwitchCase="'when'"></when>
+    <who *ngSwitchCase="'who'"></who>
+    <where *ngSwitchCase="'where'"></where>
+  </div>
+</div>

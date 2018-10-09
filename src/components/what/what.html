@@ -1,0 +1,29 @@
+<drag-scroll>
+  <div class="image-ccontainer">
+    <div class="image-container" *ngFor="let activity of activitiesList;" drag-scroll-item (click)="setCurrentActivity(activity)">
+      <img [src]="activity.imagePath" />
+      <div class="">
+        {{activity.name}}
+      </div>
+    </div>
+  </div>
+</drag-scroll>
+<!-- <ngu-carousel
+      [inputs]="carouselBanner"
+      (onMove)="onmoveFn($event)">
+
+          <ngu-item NguCarouselItem class="bannerStyle">
+              <h1>1</h1>
+          </ngu-item>
+
+          <ngu-item NguCarouselItem class="bannerStyle">
+              <h1>2</h1>
+          </ngu-item>
+
+          <ngu-item NguCarouselItem class="bannerStyle">
+              <h1>3</h1>
+          </ngu-item>
+
+          <button NguCarouselPrev class='leftRs'>&lt;</button>
+          <button NguCarouselNext class='rightRs'>&gt;</button>
+    </ngu-carousel> -->

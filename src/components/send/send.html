@@ -1,1 +1,28 @@
-asdf
+<div class="cards-asthetics">
+  <div class="card-1">
+
+  </div>
+  <div class="card-2">
+
+  </div>
+</div>
+<ion-card>
+
+  <ion-card-content>
+    <div class="send-content">
+      {{strings.i_want_to}}{{action.name}}{{action.location_query}}{{action.time_query}}{{action.people_query}}
+    </div>
+    <div class="send-footer">
+      <div class="">
+        <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button> {{strings.browse}}
+      </div>
+      <div class="">
+        <button ion-fab><ion-icon name="ios-send"></ion-icon></button> {{strings.send}}
+      </div>
+      <div class="">
+        <button ion-fab (click)="editClick()"><ion-icon name="logo-facebook"></ion-icon></button> {{strings.edit}}
+      </div>
+    </div>
+  </ion-card-content>
+
+</ion-card>

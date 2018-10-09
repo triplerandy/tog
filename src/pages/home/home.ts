@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as Strings from '../../environments/strings/strings';
 
-@IonicPage()
+@IonicPage({
+  segment: 'home/:mode'
+})
 @Component({
-  selector: 'page-home',
+  selector: 'home',
   templateUrl: 'home.html'
 })
 export class HomePage {
@@ -13,10 +15,29 @@ export class HomePage {
    */
   private strings: any = Strings.strings;
 
-  constructor(public navCtrl: NavController) {
-    
+  /**
+   * Mode to control where this headed?
+   */
+  private mode: string = "send";
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+  ) {
+    this.mode = this.navParams.data["mode"];
+    console.log(this.navParams)
+    // console.log(this.navParams.data["mode"])
+    //
+    // if (!this.navParams.data["mode"]) {
+    //   this.navCtrl.setRoot("HomePage", { "mode": "send" })
+    // }
+
+  }
 
 
+
+  goHome() {
+    this.navCtrl.setRoot("HomePage", { "mode": "send" });
   }
 
 }

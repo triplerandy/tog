@@ -1,0 +1,85 @@
+create {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+
+  .action-background {
+    background: url("../assets/imgs/hd/background-kl.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+
+    .action-content {
+      // padding: 16px !important;
+      width: 100%;
+      height: 100%;
+      background: rgba(190, 85, 4,0.8);
+      color: color($white, a100);
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+
+      .button-ios,
+      .button-md {
+        width: 25%;
+        height: 100px;
+        white-space: normal;
+      }
+
+      .button-ios:nth-child(1),
+      .button-md:nth-child(1) {
+        background: url("../assets/imgs/activities/hd/eat.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .button-ios:nth-child(2),
+      .button-md:nth-child(2) {
+        background: url("../assets/imgs/hd/background-kl.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .button-ios:nth-child(3),
+      .button-md:nth-child(3) {
+        background: url("../assets/imgs/hd/background-kl.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .button-ios:nth-child(4),
+      .button-md:nth-child(4) {
+        background: url("../assets/imgs/hd/background-kl.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    }
+  }
+
+  .action-selector {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+    .action-container {
+      flex: 1;
+    }
+  }
+}

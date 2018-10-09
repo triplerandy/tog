@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { Send } from './send';
+import { When } from './when';
 
 @NgModule({
   declarations: [
-    Send,
+    When,
   ],
   imports: [
-    IonicPageModule.forChild(Send),
-
+    IonicPageModule.forChild(When),
   ],
   exports: [
-    Send
+    When
   ]
 })
-export class SendModule { }
+export class WhenModule { }

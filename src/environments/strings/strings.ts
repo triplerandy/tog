@@ -5,8 +5,13 @@ export const strings = {
   "explore_features": "Explore Features",
   "i_want_to": "I want to ",
   "create": "create",
+  "my_activities": "my activities",
   "browse": "browse",
   "send": "send",
   "edit": "edit",
-  "hello": "hello,"
+  "hello": "hello",
+  "what": "What",
+  "where": "Where",
+  "when": "When",
+  "who": "Who",
 };

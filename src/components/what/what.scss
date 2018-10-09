@@ -1,0 +1,27 @@
+what {
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: block;
+
+  drag-scroll {
+    height: 100%;
+    width: 100%;
+
+    .image-container {
+      height: 100%;
+      width: 50%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        padding: 4px;
+        object-fit: cover;
+      }
+    }
+  }
+  // img {
+  //   height: 100%;
+  //   width: 25%;
+  // }
+}
